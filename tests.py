@@ -1,11 +1,7 @@
 import numpy as np
-from scipy.interpolate import (make_interp_spline,
-                               BSpline)
+from scipy.interpolate import make_interp_spline
 from numpy.testing import assert_allclose
-from main import (make_smoothing_spline,
-                  _make_design_matrix,
-                  _make_penalty_matrix,
-                  _make_spline)
+from gcvspl import make_smoothing_spline, _make_spline
 
 class TestMakeSmoothingSpline:
 
